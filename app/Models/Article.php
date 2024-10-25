@@ -12,7 +12,7 @@ class Article extends Model
     protected $fillable = ["designation", "reference", "marque", "qtestock", "prix", "imageart", "scategorieID"];
     public function scategorie()
     {
-        return $this->belongsTo(Souscategorie::class, "articlesPaginate");
+        return $this->belongsTo(SousCategorie::class, "articlesPaginate");
     }
 
 }
